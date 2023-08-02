@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pages.MainPage"
+             
+             Padding="10">
+
+    <Grid
+         RowSpacing="6"
+        ColumnSpacing="6"
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <ScrollView HorizontalScrollBarVisibility="Never"  Orientation="Horizontal"  Grid.Row="0"    Grid.Column="0" Grid.ColumnSpan="4">
+            <Label x:Name="ExpresionLabel" HeightRequest="100"  VerticalTextAlignment="Center"  LineBreakMode="NoWrap"   FontSize="40"/>
+        </ScrollView>
+
+
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4"  Clicked="add1" FontSize="50" Text="1"   Grid.Row="1"  Grid.Column="0"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4"  Clicked="add2" FontSize="50" Text="2"    Grid.Row="1"  Grid.Column="1"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4"  Clicked="add3" FontSize="50" Text="3"    Grid.Row="1"  Grid.Column="2"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4"  Clicked="addPlus" FontSize="50"  Text="+"    Grid.Row="1"  Grid.Column="3"></Button>
+
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="add4" FontSize="50" Text="4" Grid.Row="2"  Grid.Column="0"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="add5" FontSize="50" Text="5" Grid.Row="2"  Grid.Column="1"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="add6" FontSize="50" Text="6" Grid.Row="2"  Grid.Column="2"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="addMinus" FontSize="50" Text="-" Grid.Row="2"  Grid.Column="3"></Button>
+
+
+
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="add7" FontSize="50" Text="7" Grid.Row="3"  Grid.Column="0"></Button>
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="add8" FontSize="50" Text="8" Grid.Row="3"  Grid.Column="1"></Button>
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="add9" FontSize="50" Text="9" Grid.Row="3"  Grid.Column="2"></Button>
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="addMultiply" FontSize="50"  Text="•" Grid.Row="3"  Grid.Column="3"></Button>
+
+
+
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="add0" FontSize="50" Text="0" Grid.Row="4"  Grid.Column="0"></Button>
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="addDot" FontSize="50"  Text="." Grid.Row="4" Grid.ColumnSpan="2"  Grid.Column="1"></Button>
+        <Button BackgroundColor="Transparent" TextColor="#512Bd4" Clicked="addDivision"  FontSize="50" Text="÷" Grid.Row="4"  Grid.Column="3"></Button>
+
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="calculate"  FontSize="50" Text="=" Grid.Row="5"  Grid.ColumnSpan="2" Grid.Column="0"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="delete" FontSize="20" Text="DEL" Grid.Row="5"  Grid.Column="2"></Button>
+        <Button BackgroundColor="Transparent"  TextColor="#512Bd4" Clicked="clear"  FontSize="20" Text="CLEAR" Grid.Row="5"  Grid.Column="3"></Button>
+
+    </Grid>
+
+
+</ContentPage>

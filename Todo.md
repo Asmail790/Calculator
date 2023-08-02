@@ -1,7 +1,7 @@
 ﻿# Todo
 
-- MVVM pattern
-- Add Keyboard support.
+- Follow MVVM pattern.
+- Add keyboard support.
 - Add convertes (weight, volume, length, currency).
-- Add Common math functions such trgiomentric. 
-- Add different themes ?
+- Add common math functions such trgiomentric functions. 
+- Add different themes?
